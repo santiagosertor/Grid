@@ -1,0 +1,35 @@
+/* @import url(style.css); */
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-areas{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "header header header header header  header"
+    " . sidebar-left  container container sidebar-rigth . ";
+}
+
+ .header{
+    grid-area: header;
+    background-color: brown;
+}
+.sidebar-left{
+    grid-area: sidebar-left;
+    background-color: blue;
+}
+
+.container{
+    grid-area: container;
+    background-color: rgb(38, 255, 0);
+}
+
+.sidebar-rigth{
+    grid-area: sidebar-rigth;
+    background-color: rgb(0, 208, 255);
+}

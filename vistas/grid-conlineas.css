@@ -1,0 +1,29 @@
+@import url(style.css);
+
+.grid-conlineas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.item:nth-child(14){
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+.item:nth-child(5){
+    background-color: rgb(42, 165, 104);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   grid-column: 1/3;
+   grid-row: 2/4;
+}

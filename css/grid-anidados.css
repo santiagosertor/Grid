@@ -1,0 +1,18 @@
+@import url(style.css);
+
+.grid-anidados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+
+.grid-subgrid{
+  display: grid;
+  grid-column: span 3;
+  grid-row: 2/4;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  
+
+}

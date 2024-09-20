@@ -1,0 +1,11 @@
+@import url(style.css);
+
+.grid-dinamica{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100px);
+    grid-template-columns: repeat(auto-fit,100px);
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  
+    
+}
